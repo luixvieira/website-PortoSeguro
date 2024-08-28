@@ -1,41 +1,38 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <link
-      href="https://fonts.googleapis.com/css?family=Inter&display=swap"
-      rel="stylesheet"
-    />
-    <link href="./css/main.css" rel="stylesheet" />
-    <title>Document</title>
-  </head>
-  <body>
-    <div class="v107_180">
-      <span class="v107_204">Voltar ao menu</span
-      ><span class="v107_205">Pré diagnóstico</span
-      ><span class="v107_206"
-        >A nossa IA preparou um pré diagnóstico de acordo com suas seleções no
-        folmulário prévio
-      </span>
-      <div class="v107_207"></div>
-      <span class="v107_208">Possíveis problemas:</span
-      ><span class="v107_210">Tempo de reparo:</span
-      ><span class="v107_209">Checar:</span><span class="v107_211">Custo:</span
-      ><span class="v107_212">Necessidade de troca de peças? </span
-      ><span class="v107_213">Gravidade do problema:</span
-      ><span class="v107_214">Desgaste das pastilhas de freio </span
-      ><span class="v107_215">Pastilhas de freio</span
-      ><span class="v107_216">2h</span><span class="v107_217">R$ 150,90</span
-      ><span class="v107_218">Sim</span><span class="v107_219">Baixa</span>
-      <div class="v107_220"></div>
-      <div class="v107_231"></div>
-      <div class="v107_233"></div>
-      <span class="v107_234">Reservar peças</span>
-      <div class="v107_226"></div>
-      <span class="v107_227">Forumulário</span>
-      <div class="v107_228">
-        <div class="v107_229"></div>
-        <div class="v107_230"></div>
-      </div>
-    </div>
-  </body>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pré Diagnóstico</title>
+    <link rel="stylesheet" href="/cp html/css/pre-diagnostico.css">
+</head>
+<body>
+    <header>
+        <div class="logo"></div>
+        <nav>
+            <a href="#" class="diagnostic-link">Diagnóstico</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="title">Pré diagnóstico</h1>
+        <p class="subtitle">A nossa IA preparou um pré diagnóstico de acordo com suas seleções no formulário prévio</p>
+
+        <section class="diagnostic-box">
+            <p><strong>Possíveis problemas:</strong> Desgaste das pastilhas de freio</p>
+            <p><strong>Checar:</strong> Pastilhas de freio</p>
+            <p><strong>Tempo de reparo:</strong> 2h</p>
+            <p><strong>Custo:</strong> R$ 150,90</p>
+            <p><strong>Necessidade de troca de peças?</strong> Sim</p>
+            <p><strong>Gravidade do problema:</strong> Baixa</p>
+        </section>
+
+        <div class="action-buttons">
+            <button class="button" onclick="reservarPecas()">Reservar peças</button>
+            <a href="#" class="menu-link">Voltar ao menu</a>
+        </div>
+    </main>
+
+    <script src="/cp html/js/pre-diagnostico.js"></script>
+</body>
 </html>

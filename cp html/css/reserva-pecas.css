@@ -1,0 +1,164 @@
+/* Estilos gerais */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8f8f8;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  width: 150px;
+  height: 50px;
+  background: url("/cp html/images/v88_37.png") no-repeat center center;
+  background-size: contain;
+}
+
+.reserve-link {
+  color: #00a0fc;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+main {
+  padding: 20px;
+}
+
+.reserve-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.reserve-text {
+  max-width: 50%;
+}
+
+.reserve-text h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.reserve-text p {
+  font-size: 18px;
+}
+
+.reserve-image {
+  width: 50%;
+  height: 200px;
+  background: url("/cp html/images/v75_340.png") no-repeat center center;
+  background-size: cover;
+}
+
+.search-section {
+  margin-bottom: 20px;
+}
+
+.search-section h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.search-section form {
+  display: flex;
+  flex-direction: column;
+}
+
+.search-section label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.search-section input {
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.button {
+  background-color: #00a0fc;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  text-align: center;
+}
+
+.button:hover {
+  background-color: #008fcc;
+}
+
+.parts-section {
+  margin-bottom: 20px;
+}
+
+.parts-section h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.parts-container {
+  display: flex;
+  gap: 20px;
+}
+
+.part-item {
+  background-color: #f8f8f8;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  width: 200px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.part-item img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.part-item p {
+  margin: 10px 0;
+}
+
+.price {
+  font-weight: bold;
+  color: #333;
+}
+
+.history-section {
+  margin-bottom: 20px;
+}
+
+.history-section h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.history-section table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.history-section th, .history-section td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+.history-section th {
+  background-color: #f8f8f8;
+}

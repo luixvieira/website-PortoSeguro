@@ -3,7 +3,7 @@
 
 <head>
   <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
-  <link href="./css/main.css" rel="stylesheet" />
+  <link href="/cp html/css/sign-in.css" rel="stylesheet" />
   <title>Sign-In</title>
 </head>
 
@@ -12,24 +12,26 @@
     <div class="form-section">
       <div class="logo"></div>
       <span class="title">Sign-in</span>
-      <span class="section-title">Mecânico</span>
-      <div class="input-box"></div>
-      <span class="label">E-mail</span>
-      <div class="input-box"></div>
-      <span class="label">Código porto mecânico</span>
-      <div class="button">Entrar</div>
 
-      <span class="section-title">Cliente</span>
-      <div class="input-box"></div>
-      <span class="label">E-mail</span>
-      <div class="input-box"></div>
-      <span class="label">Código porto cliente</span>
-      <div class="button">Entrar</div>
+      <form id="loginForm" onsubmit="return validateForm()">
+        <span class="section-title">Mecânico</span>
+        <input type="email" id="mechanicEmail" name="mechanicEmail" class="input-box" placeholder="E-mail" />
+        <input type="password" id="mechanicCode" name="mechanicCode" class="input-box"
+          placeholder="Código porto mecânico" />
+
+        <span class="section-title">Cliente</span>
+        <input type="email" id="clientEmail" name="clientEmail" class="input-box" placeholder="E-mail" />
+        <input type="password" id="clientCode" name="clientCode" class="input-box" placeholder="Código porto cliente" />
+
+        <button type="submit" class="button">Entrar</button>
+      </form>
 
       <span class="helper-text">*O que é código porto?</span>
     </div>
     <div class="image-section"></div>
   </div>
+
+  <script src="/cp html/js/sign-in.js"></script>
 </body>
 
 </html>

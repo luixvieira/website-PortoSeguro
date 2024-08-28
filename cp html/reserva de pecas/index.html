@@ -1,56 +1,79 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <link
-      href="https://fonts.googleapis.com/css?family=Inter&display=swap"
-      rel="stylesheet"
-    />
-    <link href="./css/main.css" rel="stylesheet" />
-    <title>Document</title>
-  </head>
-  <body>
-    <div class="v67_239">
-      <div class="v67_286"></div>
-      <div class="v79_385"></div>
-      <span class="v67_287">Pastilhas de freio</span
-      ><span class="v67_288">Honda Civic</span>
-      <div class="v67_292"></div>
-      <span class="v75_346">Histórico de peças reservadas</span>
-      <div class="v67_282"></div>
-      <span class="v67_303">Busque a sua peça para reservar</span
-      ><span class="v71_325">Automotivo</span><span class="v71_326">Peça</span
-      ><span class="v71_327">Endereço</span>
-      <div class="v71_328"></div>
-      <span class="v71_333">Motivo da reserva</span>
-      <div class="v71_334"></div>
-      <div class="v71_331"></div>
-      <div class="v71_332"></div>
-      <div class="v71_336"></div>
-      <span class="v71_337">Buscar</span>
-      <div class="v75_340"></div>
-      <div class="v75_341"></div>
-      <span class="v75_343">Reserve e troque</span
-      ><span class="v75_345"
-        >Deseja possuir a peça que necessita te esperando no mecânico mais
-        próximo da sua casa? Então reserve e troque já!</span
-      >
-      <div class="name"></div>
-      <div class="name"></div>
-      <div class="name"></div>
-      <span class="v78_381">15/10/2023</span
-      ><span class="v78_383"
-        >CENTRO AUTOMOTIVO - BELA VISTA - RUA PEDROSO R PEDROSO, 394 - BELA
-        VISTA - SAO PAULO</span
-      >
-      <div class="v79_391"></div>
-      <div class="v79_392"></div>
-      <div class="v109_280"></div>
-      <div class="v109_281"></div>
-      <span class="v109_282">Formulário</span>
-      <div class="v109_283">
-        <div class="v109_284"></div>
-        <div class="v109_285"></div>
-      </div>
-    </div>
-  </body>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva de Peças</title>
+    <link rel="stylesheet" href="/cp html/css/reserva-pecas.css">
+</head>
+<body>
+    <header>
+        <div class="logo"></div>
+        <nav>
+            <a href="#" class="reserve-link">Reservar peças</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="reserve-section">
+            <div class="reserve-text">
+                <h1>Reserve e troque</h1>
+                <p>Deseja possuir a peça que necessita te esperando no <strong>mecânico mais próximo da sua casa?</strong> Então reserve e troque já!</p>
+            </div>
+            <div class="reserve-image"></div>
+        </section>
+
+        <section class="search-section">
+            <h2>Busque a sua peça para reservar</h2>
+            <form id="searchForm">
+                <label for="automotive">Automotivo</label>
+                <input type="text" id="automotive" name="automotive" required>
+
+                <label for="part">Peça</label>
+                <input type="text" id="part" name="part" required>
+
+                <label for="address">Endereço</label>
+                <input type="text" id="address" name="address" required>
+
+                <label for="reason">Motivo da reserva</label>
+                <input type="text" id="reason" name="reason" required>
+
+                <button type="submit" class="button">Buscar</button>
+            </form>
+        </section>
+
+        <section class="parts-section">
+            <h2>Troca de peças</h2>
+            <div class="parts-container">
+                <!-- Repetir o bloco abaixo para cada peça -->
+                <div class="part-item">
+                    <img src="/cp html/images/v91_84.png" alt="Peça">
+                    <p>Pastilha Freio Dianteiro Honda Civic Original Bosch</p>
+                    <p class="price">R$ 117,90</p>
+                    <button class="button">Agendar troca</button>
+                </div>
+                <!-- Fim do bloco -->
+            </div>
+        </section>
+
+        <section class="history-section">
+            <h2>Histórico de peças reservadas</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Peça</th>
+                        <th>Data</th>
+                        <th>Local</th>
+                        <th>Veículo</th>
+                    </tr>
+                </thead>
+                <tbody id="historyTable">
+                    <!-- Linhas do histórico são adicionadas dinamicamente -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <script src="/cp html/js/reserva-pecas.js"></script>
+</body>
 </html>
