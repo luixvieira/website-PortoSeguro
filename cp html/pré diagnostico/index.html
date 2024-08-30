@@ -1,38 +1,77 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pré Diagnóstico</title>
+    <title>Porto Formulário</title>
     <link rel="stylesheet" href="/cp html/css/pre-diagnostico.css">
 </head>
 <body>
-    <header>
-        <div class="logo"></div>
-        <nav>
-            <a href="#" class="diagnostic-link">Diagnóstico</a>
-        </nav>
-    </header>
-
-    <main>
-        <h1 class="title">Pré diagnóstico</h1>
-        <p class="subtitle">A nossa IA preparou um pré diagnóstico de acordo com suas seleções no formulário prévio</p>
-
-        <section class="diagnostic-box">
-            <p><strong>Possíveis problemas:</strong> Desgaste das pastilhas de freio</p>
-            <p><strong>Checar:</strong> Pastilhas de freio</p>
-            <p><strong>Tempo de reparo:</strong> 2h</p>
-            <p><strong>Custo:</strong> R$ 150,90</p>
-            <p><strong>Necessidade de troca de peças?</strong> Sim</p>
-            <p><strong>Gravidade do problema:</strong> Baixa</p>
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <img src="/cp html/images/v26_168.png" alt="Porto Logo">
+            </div>
+            <div class="header-title">
+                <h1>Formulário</h1>
+            </div>
+        </header>
+        <section class="form-section">
+            <div class="form-intro" id="form-intro">
+                <h2>Faça seu formulário</h2>
+                <p>Seu formulário é <span class="highlight">importante</span> para que o nosso <span class="highlight">pré diagnóstico</span> seja feito!</p>
+            </div>
+            <div class="form-content" id="form-content">
+                <form id="diagnostic-form">
+                    <div class="form-group">
+                        <label>
+                            <input type="checkbox" name="question1"> Está escutando ruídos vindos do veículo ao passar por lombadas e buracos?
+                        </label>
+                        <label>
+                            <input type="checkbox" name="question2"> Está escutando um rangido na hora de pisar no freio?
+                        </label>
+                        <label>
+                            <input type="checkbox" name="question3"> O volante está triplando?
+                        </label>
+                        <label>
+                            <input type="checkbox" name="question4"> Notou algum vazamento de óleo?
+                        </label>
+                        <label>
+                            <input type="checkbox" name="question5"> Notou a saída de uma fumaça azul do veículo?
+                        </label>
+                        <label>
+                            <input type="checkbox" name="question6"> Está escutando um barulho contínuo nas rodas?
+                        </label>
+                        <label>
+                            <input type="checkbox" name="question7"> Está havendo algum aumento no consumo de gasolina?
+                        </label>
+                        <label>
+                            <input type="checkbox" name="question8"> A direção está puxando para algum lado?
+                        </label>
+                        <label>
+                            <input type="checkbox" name="question9"> Notou algum vazamento de água?
+                        </label>
+                        <label>
+                            <input type="checkbox" name="question10"> E quanto à saída de uma fumaça preta?
+                        </label>
+                    </div>
+                    <button type="submit" class="submit-button">Enviar formulário</button>
+                </form>
+            </div>
+            <div class="diagnosis-screen" id="diagnosis-screen" style="display:none;">
+                <h2>Diagnóstico Prévio</h2>
+                <p><strong>Estimativa de Preço:</strong> R$ 500 - R$ 1500</p>
+                <p><strong>Estimativa de Tempo:</strong> 2 - 5 dias</p>
+                <p><strong>Necessidade de Troca de Peças:</strong> Sim</p>
+                <a href="/cp html/reserva de pecas/index.html" class="reserve-parts-button">Reservar Peças</a>
+                <button id="back-to-form" class="back-to-form-button">Voltar ao Formulário</button>
+            </div>
         </section>
-
-        <div class="action-buttons">
-            <button class="button" onclick="reservarPecas()">Reservar peças</button>
-            <a href="#" class="menu-link">Voltar ao menu</a>
-        </div>
-    </main>
-
+        <footer class="footer">
+            <h3>Sobre o formulário</h3>
+            <p>O formulário serve para que a nossa <span class="highlight">IA</span> possa analisar as suas respostas e demonstrar um <span class="highlight">pré diagnóstico</span> para seus problemas.</p>
+        </footer>
+    </div>
     <script src="/cp html/js/pre-diagnostico.js"></script>
 </body>
 </html>

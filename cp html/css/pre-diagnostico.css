@@ -1,92 +1,178 @@
-/* Estilos gerais */
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  color: #333;
-  text-align: center;
-  background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #fff;
-  padding: 10px 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+    padding-bottom: 20px; /* Added padding at the bottom to ensure enough space */
 }
 
-.logo {
-  width: 150px;
-  height: 50px;
-  background: url("/cp html/images/v109_281.png") no-repeat center center;
-  background-size: contain;
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #e5e7eb;
+    border-bottom: 1px solid #ccc;
 }
 
-.diagnostic-link {
-  color: #00a0fc;
-  text-decoration: none;
-  font-weight: bold;
+.header .logo img {
+    width: 100px;
 }
 
-main {
-  padding: 20px;
-  max-width: 800px;
-  margin: 0 auto;
+.header .header-title h1 {
+    margin: 0;
+    font-size: 24px;
 }
 
-.title {
-  font-size: 28px;
-  color: #00a0fc;
-  margin-bottom: 10px;
+.form-section {
+    display: flex;
+    flex-direction: column; /* Adjusted to make the section vertical */
+    padding: 20px;
+    position: relative;
 }
 
-.subtitle {
-  font-size: 16px;
-  color: #666;
-  margin-bottom: 20px;
+.form-intro {
+    padding-right: 20px;
+    position: relative;
+    background-image: url('/cp html/images/mecanico reserva pecas.png');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    height: 250px; /* Ensure image section has a consistent height */
 }
 
-.diagnostic-box {
-  background-color: #00a0fc;
-  color: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  text-align: left;
-  margin-bottom: 20px;
+.form-intro h2 {
+    margin-top: 0;
+    font-size: 22px;
+    z-index: 1;
+    position: relative;
 }
 
-.diagnostic-box p {
-  margin: 10px 0;
+.form-intro p {
+    font-size: 16px;
+    z-index: 1;
+    position: relative;
 }
 
-.action-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
+.form-intro .highlight {
+    color: #00f1ff;
+    font-weight: bold;
 }
 
-.button {
-  background-color: #00a0fc;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-weight: bold;
+.form-intro::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0;
 }
 
-.button:hover {
-  background-color: #008fcc;
+.form-content {
+    margin-top: 20px;
 }
 
-.menu-link {
-  color: #00a0fc;
-  text-decoration: none;
-  padding: 10px 20px;
-  border: 1px solid #00a0fc;
-  border-radius: 5px;
-  font-weight: bold;
-  display: inline-block;
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.form-group input {
+    margin-right: 10px;
+}
+
+.submit-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
+
+.diagnosis-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.diagnosis-screen h2 {
+    margin-top: 0;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.diagnosis-screen p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.reserve-parts-button, .back-to-form-button {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+    border: none;
+}
+
+.reserve-parts-button:hover, .back-to-form-button:hover {
+    background-color: #0056b3;
+}
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-top: 1px solid #ccc;
+}
+
+.footer h3 {
+    margin-top: 0;
+    font-size: 18px;
+}
+
+.footer p {
+    font-size: 14px;
+}
+
+.footer .highlight {
+    color: #007bff;
+    font-weight: bold;
 }
